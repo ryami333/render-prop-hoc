@@ -1,0 +1,8 @@
+{
+  "name": "render-prop-hoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ryami333/render-prop-hoc.git",
+  "author": "mitch@mitch-ryan.com",
+  "license": "UNLICENSED"
+}
