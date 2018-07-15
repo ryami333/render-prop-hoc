@@ -11,6 +11,7 @@
     "plugins": ["react", "flowtype", "flowtype-errors", "jest", "prettier"],
     "rules": {
         "flowtype-errors/show-errors": "error",
+        "flowtype-errors/show-warnings": "error",
         "react/jsx-filename-extension": [
             "error",
             { "extensions": [".js", ".jsx"] }
