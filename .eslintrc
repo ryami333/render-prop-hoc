@@ -1,0 +1,24 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:flowtype/recommended",
+        "prettier",
+        "prettier/react",
+        "prettier/flowtype"
+    ],
+    "plugins": ["react", "flowtype", "flowtype-errors", "jest", "prettier"],
+    "rules": {
+        "flowtype-errors/show-errors": "error",
+        "react/jsx-filename-extension": [
+            "error",
+            { "extensions": [".js", ".jsx"] }
+        ]
+    },
+    "env": {
+        "jest": true,
+        "es6": true,
+        "browser": true
+    }
+}
