@@ -3,7 +3,7 @@
 import { compose } from "recompose";
 import React from "react";
 import renderPropsHOC from "..";
-import { render } from "react-testing-library";
+import { render, cleanup } from "react-testing-library";
 
 describe("renderPropsHOC", () => {
 	const FOO: string & "FOO" = "FOO";
@@ -30,6 +30,10 @@ describe("renderPropsHOC", () => {
 
 	const mapFooProps = foo => ({ foo });
 	const mapBarProps = bar => ({ bar });
+
+	beforeEach(() => {
+		cleanup();
+	});
 
 	describe("single", () => {
 		const ConnectedDemo = renderPropsHOC(FooConsumer, mapFooProps)(Demo);
